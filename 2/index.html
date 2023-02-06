@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mycss.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <title>Maulana</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+            <img src="image/fai.png" width="50" alt="">
+            <a class="navbar-brand" href="#"><strong>..MAUL..</strong></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarmul" aria-controls="navbarmul" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarmul">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tentang">Tentang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pesan">Pesan</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-info" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                </svg></button>
+                </form>
+          </div>
+        </div>
+      </nav>
+
+    <!--Banner Section-->
+    <div class="banner-area" id="home">
+        <div class="title-image"></div>
+        <div class="title-name">
+          <p class="name">
+            <span id="iden-name"></span><br />
+            <span class="subtitle1" id="subtitle1">My Name is Maulana </span>
+            <span class="subtitle2" id="subtitle2"
+              >I'm 21&nbsp;years old</span
+            >
+          </p>
+        </div>
+    </div>
+
+    <!-- about me -->
+    <div id="tentang">
+        <div class="container my-5">
+            <div class="text-center">
+                <h3><b> TentangKu </b></h3>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12">
+                    <div class="card rounded" id="cardBody">
+                        <div class="card-header">
+                            <h5>I'm Maulana Malik Ibrahim</h5>
+                            <h6>Mahasiswa Universitas Alkhairaat</h6>
+                        </div>
+                        <div  class="card-body row">
+                            <img src="img/3.jpg" class=" my-3 mb-5 img-fluid rounded col-md-3 col-lg-3 ">
+                            <p class="col-md-9 col-lg-9 mt-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam dignissimos doloribus praesentium, assumenda unde distinctio quam officiis, voluptatem vel maiores cupiditate qui iusto. In iusto deleniti obcaecati iure magni quidem, velit impedit distinctio vel ipsum officiis, quis dolores? Eius rem, delectus error quos minus nisi fugiat earum totam vel repellat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, odit! Veniam nam cumque eligendi, nesciunt cum, voluptate suscipit excepturi soluta fuga doloremque dolor quos. Facilis debitis deleniti nemo, cumque libero eveniet nisi quae eligendi reprehenderit aliquid aliquam at sequi amet odio. Deserunt illum culpa, velit consequuntur soluta facere quos. Minima? Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, iure commodi quod ea voluptate quis earum neque. Modi, quam mollitia! Reiciendis atque assumenda possimus nisi officia aut iure, esse consectetur dolorem? Ad dolor adipisci doloribus deserunt fuga eligendi veritatis similique quis, iste nobis rerum expedita laboriosam molestias explicabo repellat esse!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- akhir about me -->
+
+    <!-- footer -->
+    <div id="pesan">
+        <div class="pb-2 pt-5 container-fluid bg-success">
+            <div class="text-center pb-2 ">
+                <h4><b> Pesan Yang Mau Disampaikan </b></h4>
+            </div>
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-md-5 pt-2">
+                    <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Nama Lengkap">
+                </div>
+                <div class="col-md-5 pt-2">
+                    <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Nama Panggilan">
+                </div>
+                <div class="col-md-5 pt-2">
+                    <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Nomor WA :)">
+                </div>
+                <div class="col-md-5 pt-2">
+                    <input class="form-control" type="email" list="datalistOptions" id="exampleDataList" placeholder="Email">
+                </div>
+                <div  class=" pt-2 col-md-10 col-lg-10">
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                        <label for="floatingTextarea2">Pesan yang ingin disampaikan</label>
+                      </div>
+                </div>
+                <div class="row mt-2 d-flex justify-content-center" style="margin-bottom: 70px;">
+                <button class=" col-md-10 btn btn-primary text-light"><strong> Kirim </strong></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

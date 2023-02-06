@@ -1,0 +1,236 @@
+/* Root Style */
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+:root {
+    --primarycolor : #2D2D39 ;
+    --secondaycolor : #353543 ; 
+    --accsentcolor : #FFB300 ; 
+    ---textcolor : #C4C4C4 ; 
+    --bodytext : #fff ;
+}
+
+.mynav {
+    background-color: var(--primarycolor);
+}
+.button-lg {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 0;
+    background: linear-gradient(90.54deg, #FFA800 0.48%, #FFB300 105.43%);
+    border-radius: 8px;
+    border : none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.1rem;
+    color: var(--bodytext);
+    position: relative;
+    z-index: 2;
+}
+
+h1,h2,h3,h4,h5,h6,p,span,div {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3rem; /* 48px */
+    line-height: 1.1em;
+    color: var(--bodytext);
+} 
+
+h2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.25rem; /* 36px */
+    line-height: 1.1em;
+    color: var(--bodytext); 
+}
+
+h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem; /* 32px */
+    line-height: 1.5em;
+    color: var(--bodytext);
+}
+
+h4 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.25rem; /* 36px */
+    line-height: 1.1em;
+    color: var(--accsentcolor);
+}
+
+h5 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5rem; /* 24px */
+    line-height: 1.1em;
+    color: var(--accsentcolor);   
+}
+
+h6 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem; /* 16px */
+    line-height: 1.5em !important;
+    color: var(---textcolor);
+}
+
+p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.87rem; /* 14px */
+    line-height: 1.1em; 
+    color: var(---textcolor);
+}
+
+/* Navbar Style */
+.mynav {
+    height: 66px;
+    width: 100%;
+    padding: 21px 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.1em;
+    color: var(---textcolor);
+    box-sizing: border-box;
+    z-index: 15;
+    transition: all ease-in .3s;
+    position: absolute;
+}
+
+.nav-link {
+    color: var(--bodytext);
+    font-style: normal;
+    font-weight: 500;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.nav-link::after {
+    content:"";
+    display: block;
+    position: absolute;
+    left: 0;
+    height: 3px;
+    width: 0;
+    right: 0;
+    background: rgb(0, 204, 160);
+    bottom: -4px;
+    transition: 0.3s;
+    border-radius : 2px;
+}
+.nav-link:hover::after {
+    width: 100%;
+}
+
+a.nav-link {
+    padding: 0 !important;
+    margin-right: 24px;
+    color: var(---textcolor);
+}
+
+a.nav-link:hover {
+    color: var(--bodytext);
+}
+
+.nav-link.social {
+    font-size: 18px;
+}
+
+.brand {
+    color: var(--bodytext);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 24px;
+}
+
+.brand:hover {
+    color: var(--bodytext);
+}
+
+
+/* Toggle Menu */
+
+label{
+    display:flex;
+    flex-direction:column;
+    width:28px;
+    cursor:pointer;
+}
+
+label span{
+    background: var(---textcolor);
+    border-radius:10px;
+    height: 3px;
+    margin: 2px 0;
+    transition: .4s  cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+span:nth-of-type(1){
+    width:50%;
+}
+span:nth-of-type(2){
+    width:90%;
+}
+
+span:nth-of-type(3){
+    width:75%;
+}
+
+input[type="checkbox"]{
+    display:none;
+}
+
+input[type="checkbox"]:checked ~ span:nth-of-type(1){
+    transform-origin:bottom;
+    transform:rotatez(45deg) translate(2px,0px);
+}
+
+input[type="checkbox"]:checked ~ span:nth-of-type(2){    
+    transform-origin:top;
+    transform:rotatez(-45deg)
+}
+
+input[type="checkbox"]:checked ~ span:nth-of-type(3){
+    transform-origin:bottom;
+    width:50%;
+    transform: translate(10px,-4px) rotatez(45deg);
+}
+#button{
+    margin-top: 300px;
+    background: transparent;
+    position: relative;
+    border: 1px ridge rgb(0, 204, 160);
+    border-radius: 25px;
+    overflow: hidden;
+}
+#span{
+    position: absolute;
+    width: 0;
+    left:0;
+    top: 0;
+    height: 100%;
+    background: rgb(0, 204, 160);
+    z-index: -1;
+    transition: 0.3s;
+}
+#button:hover #span{
+    width: 100%;
+}
+#button:hover{
+    border: 1px ridge white;
+}
+
+
+

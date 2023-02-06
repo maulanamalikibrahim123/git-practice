@@ -1,0 +1,71 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+/* Main Color */
+:root {
+  --lightpurple: #C5BDFF;
+  --poppins: 'Poppins', sans-serif;
+  --black: #000000;
+  --abril: 'Abril Fatface', cursive;
+  --lato:  'Lato', sans-serif;
+  --purple: #9485FF;
+  --darkgray: #6E6C78;
+  --white: #FFFFFF;
+  --lightgray: #898796;
+}
+
+/*project*/
+#project{
+	padding: 5rem 0;
+	background-image: url(img/back.png);
+	background-size: cover
+}
+#carouselExampleFade .carousel-control-prev{
+	background-color: var(--lightpurple);
+	border-radius: 50%;
+	height: 59px;
+	width: 60.5px;
+	top: 45%;
+	left: 5%;
+}
+#carouselExampleFade .carousel-control-next{
+	background-color: var(--lightpurple);
+	border-radius: 50%;
+	height: 59px;
+	width: 60.5px;
+	top: 45%;
+	right: 5%;
+}
+.title-project h1{
+	font-family: var(--abril);
+	font-size: 50px;
+	padding-bottom: 3rem;
+}
+.title-project h1:after{
+	content: '';
+	display: block;
+	border-bottom: 7px solid var(--purple);
+	width: 10%;
+	padding-bottom: 9px;
+	margin-bottom: -9px;
+}
+.title-project span{
+	color: var(--purple);
+}
+
+/*deskop version biasa*/
+@media (min-width: 992px) {	
+	
+	/*project*/
+	#carouselExampleFade .carousel-inner .carousel-item img{
+		height: 80vh;
+	} 
+	.title-project h1{
+		font-size: 65px;
+		padding-left: 4rem; 
+	}
+	
+}
+

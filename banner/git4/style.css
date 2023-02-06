@@ -1,0 +1,159 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+/* Main Color */
+:root {
+  --lightpurple: #C5BDFF;
+  --poppins: 'Poppins', sans-serif;
+  --black: #000000;
+  --abril: 'Abril Fatface', cursive;
+  --lato:  'Lato', sans-serif;
+  --purple: #9485FF;
+  --darkgray: #6E6C78;
+  --white: #FFFFFF;
+  --lightgray: #898796;
+}
+::selection {
+  color: var(--lightpurple);
+  background: CornflowerBlue;
+  background-color: var(--black);
+}
+
+
+/*jumbotron*/
+.jumbotron .text{
+	padding-bottom: 6rem;
+}
+.jumbotron{
+	background-image: url(img/scr.png) !important;
+	background-size: cover;
+	height: 100vh;
+	margin-top: -74px;	
+	background-position: center;
+}
+.jumbotron .text h2{
+	text-transform: uppercase;
+	font-family: var(--lato);
+	font-size: 24px;
+	font-weight: 300;
+	padding-top: 9.5rem;
+}
+.jumbotron .text h1{
+	text-transform: capitalize;
+	font-family: var(--abril);
+	font-size: 75px;
+	color: black;
+	overflow: hidden;
+}
+@keyframes blink {
+  0% {
+    background-color: #ccc;
+  }
+
+  49% {
+    background-color: #ccc;
+  }
+
+  50% {
+    background-color: transparent;
+  }
+
+  99% {
+  	background-color: transparent;
+  }
+  100% {
+  	background-color: #ccc;
+  }
+}
+.jumbotron .text h1 .cursor{
+	display: inline-block;
+	background-color: #ccc;
+	margin-left: 0.1rem;
+	width: 3px;
+	animation: blink 1s infinite;
+}
+.jumbotron .text h1 .cursor .typing {
+	animation: none;
+}
+.jumbotron .text span{	
+	color: var(--purple);
+}
+
+.jumbotron .text h3{
+	text-transform: capitalize;
+	font-family: var(--poppins);
+	font-size: 24px;
+	font-weight: 400;
+	display: flex;
+	padding-bottom: 25px;
+}
+.jumbotron .text h3::after{
+	content: '';
+	display: block;
+	border-right: 7px solid var(--lightpurple);
+	width: 5px;
+}
+.jumbotron .sosial-media a{
+	text-decoration: none;
+	color: var(--lightgray);
+	padding-right: 25px;
+	width: 50px;
+	height: 50px;
+}
+
+
+
+/*deskop version biasa*/
+@media (min-width: 992px) {	
+	
+	
+	.jumbotron .text {
+		padding-left: 4rem;
+		top: 36%;
+		position: absolute;
+	}
+	.jumbotron .text h2{
+		text-transform: uppercase;
+		font-family: var(--lato);
+		font-size: 30px;
+		font-weight: 300;
+		padding-top: 0;
+	}
+	.jumbotron .text h1{
+		text-transform: capitalize;
+		font-family: var(--abril);
+		font-size: 85px;
+		color: black;
+	}
+	.jumbotron .text span{
+		color: var(--purple);
+	}
+	.jumbotron .text h3{
+		text-transform: capitalize;
+		font-family: var(--poppins);
+		font-size: 26px;
+		font-weight: 400;
+		display: flex;
+		padding-bottom: 25px;
+	}
+	.jumbotron .text h3::after{
+		content: '';
+		display: block;
+		border-right: 7px solid var(--lightpurple);
+		width: 4%;
+	}
+	.jumbotron .sosial-media a{
+		text-decoration: none;
+		color: var(--lightgray);
+		padding-right: 25px;
+		width: 70px;
+		height: 70px;
+	}
+	.jumbotron .sosial-media a:hover{
+		color: var(--purple);
+	}
+	
+}
+
